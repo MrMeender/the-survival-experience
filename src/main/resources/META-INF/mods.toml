@@ -1,7 +1,7 @@
 modLoader="javafml"
 loaderVersion="[36,)"
 license="All rights reserved"
-issueTrackerURL="github.com/MinecraftForge/MinecraftForge/issues"
+issueTrackerURL="https://github.com/MrMeender/The-Survival-Experience-Mod/issues"
 showAsResourcePack=false
 
 [[mods]]
