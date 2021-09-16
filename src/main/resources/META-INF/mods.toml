@@ -8,23 +8,23 @@ showAsResourcePack=false
     modId="tsedata"
     version="0.1.3.0"
     displayName="The Survival Experience Datapack"
-    updateJSONURL="minecraftforge.net/versions.json"
-    displayURL="minecraftforge.net"
-    logoFile="logo.png"
-    credits="I'd like to thank my mother and father."
-    authors="MrMeender"
+    #updateJSONURL="minecraftforge.net/versions.json"
+    #displayURL="minecraftforge.net"
+    #logoFile="logo.png"
+    #credits="I'd like to thank my mother and father."
+    #authors="MrMeender"
     description='''
 Lets you craft dirt into diamonds. This is a traditional mod that has existed for eons. It is ancient. The holy Notch created it. Jeb rainbowfied it. Dinnerbone made it upside down. Etc.
     '''
 
-[[dependencies.examplemod]]
+[[dependencies.tsedata]]
     modId="forge"
     mandatory=true
     versionRange="[36,)"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.tsedata]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.16,)"
