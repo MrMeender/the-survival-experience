@@ -1,0 +1,19 @@
+{
+    "type": "crafting_shapeless",
+    "group": "miscellaneous",
+    "ingredients": [
+        {
+            "item": "dirt"
+        },
+        {
+            "item": "dirt"
+        },
+        {
+            "item": "dirt"
+        }
+    ],
+    "result": {
+        "count": 1,
+        "item": "flint"
+    }
+}
