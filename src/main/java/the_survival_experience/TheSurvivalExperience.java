@@ -1,4 +1,4 @@
-package me.mrmeender.the_survival_experience;
+package the_survival_experience;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
