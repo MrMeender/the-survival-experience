@@ -33,7 +33,7 @@ public class TheSurvivalExperience
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, "the_survival_experience");
 
     // Blocks added to the registry
-    public static final RegistryObject<Block> alive_bush_block = BLOCKS.register("alive_bush_block", () -> new AliveBushBlock());
+    public static final RegistryObject<Block> ALIVE_BUSH_BLOCK = BLOCKS.register("alive_bush", () -> new AliveBushBlock());
 
     public TheSurvivalExperience() {
         // Register the setup method for modloading
