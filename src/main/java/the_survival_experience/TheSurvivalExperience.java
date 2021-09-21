@@ -11,7 +11,12 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fmlserverevents.FMLServerStartingEvent;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import the_survival_experience.block.AliveBushBlock;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fmllegacy.RegistryObject;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -24,9 +29,17 @@ public class TheSurvivalExperience
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 
+    // Blocks registry for "the_survival_experience"
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, "the_survival_experience");
+
+    // Blocks added to the registry
+    public static final RegistryObject<Block> alive_bush_block = BLOCKS.register("alive_bush_block", () -> new AliveBushBlock());
+
     public TheSurvivalExperience() {
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
+        // Register the blocks
+        BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
         // Register the enqueueIMC method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
         // Register the processIMC method for modloading
